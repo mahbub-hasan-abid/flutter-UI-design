@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Sales Analytics',
-      theme: ThemeData.dark(),
+      //  theme: ThemeData.dark(),
       home: HomePage(),
     );
   }
@@ -34,10 +34,16 @@ class HomePage extends StatelessWidget {
               backgroundImage: AssetImage('assets/profile.jpg'),
             ),
           ),
-          title: const Text('Hi  M.H. Abid'),
+          title: const Text(
+            'Hi  M.H. Abid',
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          ),
           actions: [
             IconButton(
-              icon: const Icon(Icons.search),
+              icon: const Icon(
+                Icons.search,
+                color: Colors.white,
+              ),
               onPressed: () {},
             ),
           ],
@@ -51,6 +57,7 @@ class HomePage extends StatelessWidget {
                 const Text(
                   'Sales per employee per month',
                   style: TextStyle(
+                    color: Colors.white,
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                   ),
@@ -61,7 +68,7 @@ class HomePage extends StatelessWidget {
                 const Text(
                   '263 contributions in the last year',
                   style: TextStyle(
-                    color: Colors.grey,
+                    color: Colors.white,
                   ),
                 ),
                 const SizedBox(height: 16),
@@ -97,7 +104,7 @@ class HomePage extends StatelessWidget {
                 const Text(
                   'Statistic of  sales is presented here by  heat map.',
                   style: TextStyle(
-                    color: Colors.grey,
+                    color: Colors.white,
                   ),
                 ),
                 const SizedBox(height: 16),
@@ -106,7 +113,10 @@ class HomePage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    const Text('Less'),
+                    const Text(
+                      'Less',
+                      style: TextStyle(color: Colors.white),
+                    ),
                     const SizedBox(
                       width: 10,
                     ),
@@ -134,7 +144,10 @@ class HomePage extends StatelessWidget {
                     const SizedBox(
                       width: 10,
                     ),
-                    const Text('More'),
+                    const Text(
+                      'More',
+                      style: TextStyle(color: Colors.white),
+                    ),
                   ],
                 ),
                 // Padding(
@@ -162,42 +175,60 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ),
-        bottomNavigationBar: BottomAppBar(
-          color: Color.fromARGB(255, 0, 0, 0),
-          shape: const CircularNotchedRectangle(),
-          notchMargin: 8.0,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              IconButton(
-                icon: const Icon(Icons.home, color: Colors.white),
-                onPressed: () {},
+        bottomNavigationBar: Container(
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(30),
+                topRight: Radius.circular(20),
               ),
-              IconButton(
-                icon: const Icon(Icons.bar_chart, color: Colors.grey),
-                onPressed: () {},
-              ),
-              const SizedBox(width: 48),
-              IconButton(
-                icon: const Icon(Icons.person, color: Colors.grey),
-                onPressed: () {},
-              ),
-              IconButton(
-                icon: const Icon(Icons.settings, color: Colors.grey),
-                onPressed: () {},
-              ),
-            ],
+              border: Border(
+                top: BorderSide(
+                  color: Colors.white, // Set the color of the border
+                  width: 2.0, // Set the width of the border
+                ),
+              )),
+          child: BottomAppBar(
+            color: Colors.transparent,
+            shape: CircularNotchedRectangle(),
+            notchMargin: 8.0,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.home, color: Colors.white),
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: const Icon(Icons.bar_chart, color: Colors.white),
+                  onPressed: () {},
+                ),
+                const SizedBox(width: 48),
+                IconButton(
+                  icon: const Icon(Icons.person, color: Colors.white),
+                  onPressed: () {},
+                ),
+                IconButton(
+                  icon: const Icon(Icons.settings, color: Colors.white),
+                  onPressed: () {},
+                ),
+              ],
+            ),
           ),
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: const Icon(
-            Icons.add,
-            color: Colors.black,
-          ),
-          backgroundColor: Color.fromARGB(255, 36, 229, 3),
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        floatingActionButton: Stack(
+          alignment: Alignment.center,
+          children: [
+            FloatingActionButton(
+              onPressed: () {},
+              backgroundColor: Color.fromARGB(255, 36, 229, 3),
+              child: const Icon(
+                Icons.add,
+                color: Colors.black,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -271,7 +302,7 @@ class ContributionCalendar extends StatelessWidget {
                 child: Text(
                   months[index],
                   style: const TextStyle(
-                    color: Colors.grey,
+                    color: Colors.white,
                     fontSize: 12,
                   ),
                 ),

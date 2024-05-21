@@ -27,6 +27,7 @@ class ShapeMaker extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Transform.rotate(
                     angle: pi / 4,
@@ -39,14 +40,27 @@ class ShapeMaker extends StatelessWidget {
                       height: HEIGHT * .11,
                       child: Transform.rotate(
                           angle: -pi / 4,
-                          child: const Center(
-                              child: Text(
-                            'This month \n \$1,767M',
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 17,
-                                fontWeight: FontWeight.w900),
-                          ))),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Center(
+                                  child: Text(
+                                '\$1.7M',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 19,
+                                    fontWeight: FontWeight.w900),
+                              )),
+                              const Center(
+                                  child: Text(
+                                'This month ',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w600),
+                              )),
+                            ],
+                          )),
                     ),
                   ),
                   const SizedBox(
@@ -63,14 +77,27 @@ class ShapeMaker extends StatelessWidget {
                       height: HEIGHT * .11,
                       child: Transform.rotate(
                           angle: -pi / 4,
-                          child: const Center(
-                              child: Text(
-                            'This year \n \$8,767M',
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 17,
-                                fontWeight: FontWeight.w900),
-                          ))),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Center(
+                                  child: Text(
+                                '\$88M',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 19,
+                                    fontWeight: FontWeight.w900),
+                              )),
+                              const Center(
+                                  child: Text(
+                                'This Year ',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w600),
+                              )),
+                            ],
+                          )),
                     ),
                   ),
                   const SizedBox(
@@ -87,14 +114,27 @@ class ShapeMaker extends StatelessWidget {
                       height: HEIGHT * .11,
                       child: Transform.rotate(
                           angle: -pi / 4,
-                          child: const Center(
-                              child: Text(
-                            'Last month \n \$1,123M',
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 17,
-                                fontWeight: FontWeight.w900),
-                          ))),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Center(
+                                  child: Text(
+                                '\$7.8M',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 19,
+                                    fontWeight: FontWeight.w900),
+                              )),
+                              const Center(
+                                  child: Text(
+                                'Last month ',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.w600),
+                              )),
+                            ],
+                          )),
                     ),
                   ),
                 ],
