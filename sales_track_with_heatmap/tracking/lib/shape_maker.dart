@@ -40,7 +40,7 @@ class ShapeMaker extends StatelessWidget {
                       height: HEIGHT * .11,
                       child: Transform.rotate(
                           angle: -pi / 4,
-                          child: Column(
+                          child: const Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Center(
@@ -51,7 +51,7 @@ class ShapeMaker extends StatelessWidget {
                                     fontSize: 19,
                                     fontWeight: FontWeight.w900),
                               )),
-                              const Center(
+                              Center(
                                   child: Text(
                                 'This month ',
                                 style: TextStyle(
@@ -77,7 +77,7 @@ class ShapeMaker extends StatelessWidget {
                       height: HEIGHT * .11,
                       child: Transform.rotate(
                           angle: -pi / 4,
-                          child: Column(
+                          child: const Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Center(
@@ -88,7 +88,7 @@ class ShapeMaker extends StatelessWidget {
                                     fontSize: 19,
                                     fontWeight: FontWeight.w900),
                               )),
-                              const Center(
+                              Center(
                                   child: Text(
                                 'This Year ',
                                 style: TextStyle(
@@ -114,7 +114,7 @@ class ShapeMaker extends StatelessWidget {
                       height: HEIGHT * .11,
                       child: Transform.rotate(
                           angle: -pi / 4,
-                          child: Column(
+                          child: const Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Center(
@@ -125,7 +125,7 @@ class ShapeMaker extends StatelessWidget {
                                     fontSize: 19,
                                     fontWeight: FontWeight.w900),
                               )),
-                              const Center(
+                              Center(
                                   child: Text(
                                 'Last month ',
                                 style: TextStyle(
