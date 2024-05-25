@@ -181,12 +181,13 @@ class HomePage extends StatelessWidget {
                       right: 30,
                       top: 30,
                       child: Container(
-                        decoration: const BoxDecoration(
-                            borderRadius: BorderRadius.only(
-                              bottomRight: Radius.circular(30.0),
-                              //  topRight: Radius.circular(30.0),
-                              topLeft: Radius.circular(30.0),
-                            ),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(30),
+                            // borderRadius: BorderRadius.only(
+                            //   bottomRight: Radius.circular(30.0),
+                            //   //  topRight: Radius.circular(30.0),
+                            //   topLeft: Radius.circular(30.0),
+                            // ),
                             color: Color.fromARGB(255, 36, 229, 3)),
                         height: 170,
                         width: 170,
@@ -220,12 +221,13 @@ class HomePage extends StatelessWidget {
                       top: 200,
                       left: 30,
                       child: Container(
-                        decoration: const BoxDecoration(
-                          borderRadius: BorderRadius.only(
-                            bottomRight: Radius.circular(30.0),
-                            // topRight: Radius.circular(30.0),
-                            topLeft: Radius.circular(30.0),
-                          ),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(30),
+                          // borderRadius: BorderRadius.only(
+                          //   bottomRight: Radius.circular(30.0),
+                          //   // topRight: Radius.circular(30.0),
+                          //   topLeft: Radius.circular(30.0),
+                          // ),
                           color: Color.fromARGB(255, 36, 229, 3),
                         ),
                         height: 170,
@@ -257,8 +259,8 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      right: 30,
-                      top: 210,
+                      right: 41,
+                      top: 199,
                       child: Container(
                         decoration: const BoxDecoration(
                           // borderRadius: BorderRadius.circular(30),
@@ -267,6 +269,23 @@ class HomePage extends StatelessWidget {
                             topRight: Radius.circular(30.0),
                             topLeft: Radius.circular(30.0),
                           ),
+                          color: Colors.black,
+                        ),
+                        height: 150,
+                        width: 150,
+                      ),
+                    ),
+                    Positioned(
+                      right: 30,
+                      top: 210,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(30),
+                          // borderRadius: BorderRadius.only(
+                          //   bottomLeft: Radius.circular(30.0),
+                          //   topRight: Radius.circular(30.0),
+                          //   topLeft: Radius.circular(30.0),
+                          // ),
                           color: Color.fromARGB(255, 58, 54, 54),
                         ),
                         height: 150,
@@ -298,16 +317,31 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      top: 40,
-                      left: 30,
+                      top: 50,
+                      left: 40,
                       child: Container(
                         decoration: const BoxDecoration(
                           // borderRadius: BorderRadius.circular(30),
                           borderRadius: BorderRadius.only(
                             bottomRight: Radius.circular(30.0),
-                            topRight: Radius.circular(30.0),
-                            bottomLeft: Radius.circular(30.0),
                           ),
+                          color: Colors.black,
+                        ),
+                        height: 150,
+                        width: 150,
+                      ),
+                    ),
+                    Positioned(
+                      top: 40,
+                      left: 30,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(30),
+                          // borderRadius: BorderRadius.only(
+                          //   bottomRight: Radius.circular(30.0),
+                          //   topRight: Radius.circular(30.0),
+                          // //   bottomLeft: Radius.circular(30.0),
+                          // ),
                           color: Color.fromARGB(255, 58, 54, 54),
                         ),
                         height: 150,
