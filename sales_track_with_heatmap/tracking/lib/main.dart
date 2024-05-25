@@ -260,7 +260,7 @@ class HomePage extends StatelessWidget {
                     ),
                     Positioned(
                       right: 41,
-                      top: 199,
+                      top: 200,
                       child: Container(
                         decoration: const BoxDecoration(
                           // borderRadius: BorderRadius.circular(30),
