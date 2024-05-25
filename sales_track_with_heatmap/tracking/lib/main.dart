@@ -317,8 +317,8 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      top: 50,
-                      left: 40,
+                      top: 51,
+                      left: 41,
                       child: Container(
                         decoration: const BoxDecoration(
                           // borderRadius: BorderRadius.circular(30),
