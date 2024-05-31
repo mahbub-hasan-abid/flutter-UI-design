@@ -237,6 +237,8 @@ class HomePage extends StatelessWidget {
                             Icons.person_add_alt_1_sharp,
                             color: Colors.black,
                             size: 30,
+
+                            //lll
                           ),
                           Text(
                             "8.95K",
